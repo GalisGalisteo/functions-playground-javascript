@@ -10,20 +10,26 @@
 
 /** La función está incompleta. SOLO debes modificar la función */
 
-function agua_necesaria(condicion, km) {
-  let agua_por_km;
-  let litros_totales;
+function aguaNecesaria(condicion, km) {
+  let aguaPorKm;
+  let litrosTotales;
 
-  if (condicion == "buena") {
-    agua_por_km = 0.5;
+  if (condicion === "buena") {
+    aguaPorKm = 0.5;
+  } else if (condicion === "regular") {
+    aguaPorKm = 0.6;
+  } else if (condicion === "mala") {
+    aguaPorKm = 0.7;
+  } else {
+    throw new Error("La condición no existe");
   }
-
-  return litros_totales;
+  litrosTotales = aguaPorKm * km
+  return litrosTotales;
 }
 
 let condicion = "regular";
 let km = 5;
-let agua = agua_necesaria(condicion, km);
+let agua = aguaNecesaria(condicion, km);
 console.log(
   `Para recorrer ${km} kms con una condición física ${condicion}, el ciclista necesita ${agua}l de agua`
 );

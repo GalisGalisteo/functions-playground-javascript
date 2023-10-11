@@ -6,8 +6,8 @@ function suma(a, b) {
   return a + b;
 }
 
-let sum1; //MODIFICA SOLO ESTA LÍNEA
-let sum2; // MODIFICA SOLO ESTA LÍNEA
+let sum1 = 1; //MODIFICA SOLO ESTA LÍNEA
+let sum2 = 2; // MODIFICA SOLO ESTA LÍNEA
 let resultado = suma(sum1, sum2);
 console.log(resultado);
 

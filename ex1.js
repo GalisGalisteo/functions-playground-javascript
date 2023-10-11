@@ -7,3 +7,5 @@ function muestraGato() {
 }
 
 // A partir de aquí tu código
+
+muestraGato();

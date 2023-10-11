@@ -13,3 +13,5 @@ function escribeVeces(n, texto) {
 /**
  * Invoca esta función de manera adecuada para que escribe la palabra 'Hola!' 10 veces. ESCRIBE solo a partir de aquí
  */
+
+escribeVeces(10, 'Hola!')
